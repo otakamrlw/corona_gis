@@ -4,7 +4,7 @@ import pandas as pd
 
 # paths
 pdf_path = "/Users/takayuki/Document/career/nagoyaU/corona/報道発表_pdf/4月/20200401.pdf"
-directory_path = "/Users/takayuki/Document/career/nagoyaU/corona/報道発表_pdf/4月"
+directory_path = "/Users/takayuki/Document/career/nagoyaU/corona/報道発表_pdf/6月"
 template_path = "/Users/takayuki/Document/career/nagoyaU/corona/tabula-template.json"
 
 # Read pdf into DataFrame
@@ -18,4 +18,4 @@ template_path = "/Users/takayuki/Document/career/nagoyaU/corona/tabula-template.
 # tabula.convert_into(pdf_path, "output2.csv", output_format="csv", lattice=True, pages=1)
 # tabula.convert_into(pdf_path, "test.csv", output_format="csv", pages=1, lattice=True)
 # # convert all PDFs in a directory
-tabula.convert_into_by_batch(directory_path, output_format='csv', lattice=True, pages=1, java_options="-Dfile.encoding=utf-8")
+tabula.convert_into_by_batch(directory_path, output_format='csv', lattice=True, pages=1, java_options="-Dfile.encoding=shiftjis")
